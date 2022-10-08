@@ -1,0 +1,80 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('LOAN');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.loan.drop();
+
+// Insert a few documents into the loan collection.
+db.loan.insertMany([
+  { '_id': 1, 
+  'customerName': 'Milan',
+   'phoneNumber': '9925012345',
+   'address': '402 , Kudasan',
+    'loanAmount': 2000,
+    'interest': 5, 
+    'loanTermsYears': 5 ,
+    'loanType':'educationloan',
+    'description':'ASU',
+    'createdDate': new Date ('2022-08-10 T07:00:00.000+00:00'),
+     'insertedDate': new Date('2022-08-10T07:00:00.000+00:00') },
+
+  { '_id': 2, 
+  'customerName': 'Jenil',
+   'phoneNumber': '992501242',
+   'address': '402 , Raisan',
+    'loanAmount': 20000,
+    'interest': 5, 
+    'loanTermsYears': 5 ,
+    'loanType':'CAR',
+    'description':'BMW M3',
+    'createdDate': new Date ('2022-08-10 T07:00:00.000+00:00'),
+     'insertedDate': new Date('2022-08-10T07:00:00.000+00:00') },
+
+   { '_id': 3, 
+  'customerName': 'Karina',
+   'phoneNumber': '9925012005',
+   'address': '402 , Koba',
+    'loanAmount': 1000,
+    'interest': 5, 
+    'loanTermsYears': 5 ,
+    'loanType':'Bike',
+    'description':'BMW S1000 RR',
+    'createdDate': new Date ('2022-08-10 T07:00:00.000+00:00'),
+     'insertedDate': new Date('2022-08-10T07:00:00.000+00:00') },
+
+   { '_id': 4, 
+  'customerName': 'Ashi',
+   'phoneNumber': '9925011115',
+   'address': '402 , Sector 3',
+    'loanAmount': 20001,
+    'interest': 5, 
+    'loanTermsYears': 5 ,
+    'loanType':'Business',
+    'description':'Steel Manufacturing',
+    'createdDate': new Date ('2022-08-10 T07:00:00.000+00:00'),
+     'insertedDate': new Date('2022-08-10T07:00:00.000+00:00') },
+
+    { '_id': 5, 
+  'customerName': 'prithu',
+   'phoneNumber': '9922222345',
+   'address': '402 , Goldarea',
+    'loanAmount': 20100,
+    'interest': 5, 
+    'loanTermsYears': 5 ,
+    'loanType':'Gold',
+    'description':'Gold to Money',
+    'createdDate': new Date ('2022-08-10 T07:00:00.000+00:00'),
+     'insertedDate': new Date('2022-08-10T07:00:00.000+00:00') },
+
+
+
+
+]);
+
+
